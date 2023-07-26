@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.coming-soon {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 15px;
+}
+
+.container-day,
+.container-hour,
+.container-minute,
+.container-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 2rem;
+}
+
+.waiting {
+  height: 50vh;
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 8vw;
+    margin-bottom: 6vw;
+  }
+  .countdown {
+    margin-bottom: 4vw;
+  }
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 6vw;
+  }
+  .waiting {
+    width: 90vw;
+    height: auto;
+  }
+  span {
+    font-size: 3vw;
+  }
+}
